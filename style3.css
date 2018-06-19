@@ -1,5 +1,5 @@
-html, body{
-    
+.body{
+    font-family: "Cormorant"; 
 }
 
 .wrapper{
@@ -23,6 +23,22 @@ div.line p {
     transform: translate(-50%, -50%)
 }
 
-div.button1 {
-
+.pre {
+    height: 10em;
+    position: relative;
+}
+.button {
+    background-color: #f44336;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    position: absolute;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
 }
