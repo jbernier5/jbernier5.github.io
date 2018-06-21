@@ -7,13 +7,23 @@
     <title>challenges</title>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script> 
     <script src = angular.js></script>
+    <script>
+            var app = angular.module('myApp', []);
+            app.controller('personCtrl', function($scope) {
+                $scope.list = ["curious", "brave", "smart", "happy", "loving"];
+                $scope.randNum = Math.floor(Math.random()*4)
+                $scope.fullName = function() {
+                    return $scope.list[$scope.randNum];
+                };
+            });
+            </script>
 </head>
 
 <body>
 
-    <div ng-app="" ng-init="points=['creative', 'fun' ,'loving','brave','not a feminist']" ng-init="randNum = getRandom();">
+    <div ng-app="" ng-controller="personCtrl">
             
-            <p>I am {{ points[randNum] }}</p>
+            <p>I am {{ fullName() }}</p>
             
     </div>
 
