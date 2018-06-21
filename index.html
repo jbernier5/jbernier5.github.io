@@ -6,17 +6,16 @@
     <link href="https://fonts.googleapis.com/css?family=Arvo|Cormorant|Exo+2|Lato|Nunito|Old+Standard+TT|Rakkas|Source+Sans+Pro|Ubuntu|Yatra+One" rel="stylesheet">
     <title>challenges</title>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script> 
+    <script src = angular.js></script>
 </head>
 
 <body>
 
-    <div>
-        <p>Hello!</p>
-
+    <div ng-app="" ng-init="points=['creative', 'fun' ,'loving','brave','not a feminist']" ng-init="randNum = getRandom();">
+            
+            <p>I am {{ points[randNum] }}</p>
+            
     </div>
-
-
-
 
 
 
