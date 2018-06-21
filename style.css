@@ -1,0 +1,22 @@
+html {
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+ }
+ 
+ body {
+    margin: 0px;
+    min-height: 100%;
+    width: 100%;
+    background-color: blue;
+ }
+
+
+/* div {
+    background-color: blue;
+    width: 198px;
+    border: 74px solid red;
+    padding: 74px;
+    margin: 74px solid blue;
+}
+*/
