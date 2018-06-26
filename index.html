@@ -28,7 +28,7 @@
     <script>
     var app = angular.module('myApp', []);
     app.controller('complimentCtrl', function($scope) {
-        $scope.list = ["curious", "brave", "smart", "happy", "loving"];
+        $scope.list = ["a ray of sunshine on a cloudy day!", "as brave as a lion.", "a strong, independent woman who don't need no man.", "a good person.", "looking really nice today!"];
         $scope.randNum = Math.floor(Math.random()*4)
         $scope.compliment = function() {
             return $scope.list[$scope.randNum];
