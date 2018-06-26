@@ -26,10 +26,10 @@
         <script>
         var app = angular.module('myApp', []);
         app.controller('complimentCtrl', function($scope) {
-            $scope.list = ["You are a ray of sunshine on a cloudy day!", "You are as brave as a lion.", "You are a strong, independent woman.", "You are a good person.", "You are looking really nice today!", "You are, without a doubt, the worst pirate I have ever heard of!", "Yer a wizard 'Arry!", "You are very important to the people around you", ""];
-            $scope.randNum = Math.floor(Math.random()*8)
+            $scope.list = ["You are a ray of sunshine on a cloudy day!", "You are as brave as a lion.", "You are a strong, independent woman.", "You are a good person.", "You are looking really nice today!", "Yer a wizard 'Arry!", "You make the people around you happy.", ""];
+            $scope.randNum = Math.floor(Math.random()*7)
             $scope.compliment = function() {
-                $scope.randNum = Math.floor(Math.random()*8)
+                $scope.randNum = Math.floor(Math.random()*7)
                 return $scope.list[$scope.randNum];
             };
             $scope.thing = $scope.compliment
@@ -37,7 +37,7 @@
         </script>
 
         <div class = "footer">
-        Version 5.50 6.26
+        Version 5.57 6.26
         </div>
     </div>
 </body>
