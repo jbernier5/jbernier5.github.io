@@ -17,7 +17,7 @@
 
     <div class = "text" ng-app="myApp" ng-controller="complimentCtrl">
 
-    You are {{compliment()}}
+    You are {{thing()}}
     <br>
     <p></p>
     <p></p>
@@ -33,6 +33,7 @@
         $scope.compliment = function() {
             return $scope.list[$scope.randNum];
         };
+        $scope.thing = $scope.compliment
     });
     </script>
 
