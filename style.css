@@ -54,7 +54,7 @@ html {
 }
 
 .footer {
-    padding: 5px;
+    padding: 0px;
     text-align: center;
     background: #ddd;
     height: 3px; /* height of footer */
