@@ -21,14 +21,14 @@
     <br>
     <p></p>
     <p></p>
-    <button class = "button" ng-click = "compliment()">Have another compliment!</button>
+    <button type = "button" class = "button" ng-click = "compliment()">Have another compliment!</button>
 
     </div>
 
     <script>
     var app = angular.module('myApp', []);
     app.controller('complimentCtrl', function($scope) {
-        $scope.list = ["a ray of sunshine on a cloudy day!", "as brave as a lion.", "a strong, independent woman.", "a good person.", "looking really nice today!", ", without a doubt, the worst pirate I have ever heard of!"];
+        $scope.list = ["You are a ray of sunshine on a cloudy day!", "You are as brave as a lion.", "You are a strong, independent woman.", "You are a good person.", "You are looking really nice today!", "You are, without a doubt, the worst pirate I have ever heard of!"];
         $scope.randNum = Math.floor(Math.random()*5)
         $scope.compliment = function() {
             return $scope.list[$scope.randNum];
@@ -38,7 +38,7 @@
     </script>
 
     <p>
-        Version 5.04 6.26
+        Version 5.06 6.26
     </p>
 </body>
 </html>
