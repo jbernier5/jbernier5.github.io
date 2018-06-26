@@ -34,7 +34,7 @@ html {
     text-align: center;
     font-size: 80px;
     padding: 10px;
-    padding-bottom: 3px; /* height of footer */
+    padding-bottom: 1px; /* height of footer */
 }
 
 .button {
@@ -57,7 +57,7 @@ html {
     padding: 0px;
     text-align: center;
     background: #ddd;
-    height: 3px; /* height of footer */
+    height: 1px; /* height of footer */
     position:absolute;
     bottom: 0;
     width: 100%;
