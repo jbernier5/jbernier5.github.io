@@ -2,7 +2,7 @@ html {
     margin: 0px;
     height: 100%;
     width: 100%;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Proza Libre', sans-serif;
     background: linear-gradient(to bottom, rgba(231, 240, 245, 1) 0%, rgba(170, 221, 235, 1) 100%);
  }
  
@@ -18,14 +18,14 @@ html {
 }
 
 .header h1 {
-    font-size: 80px;
+    font-size: 50px;
 }
 
 .text {
     align-items: center;
     justify-content: center;
     text-align: center;
-    font-size: 50px;
+    font-size: 80px;
 }
 
 .button {
