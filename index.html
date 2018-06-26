@@ -1,32 +1,35 @@
 <!DOCTYPE html>
-<html lang = "en">
+<html lang = "en" >
 <head>
     <meta charset="utf-8" />
-    <link type="text/css" rel="stylesheet"  href="/Users/jackbernier/Desktop/style.css">
+    <link type="text/css" rel="stylesheet"  href="/Users/jackbernier/jbernier5.github.io/style3.css">
+    <title>Compliment Generator</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Arvo|Cormorant|Exo+2|Lato|Nunito|Old+Standard+TT|Rakkas|Source+Sans+Pro|Ubuntu|Yatra+One" rel="stylesheet">
-    <title>i wish this was angular</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>  
 </head>
 
 <body>
 
-    <script>
-            var app = angular.module('myApp', []);
-            app.controller('personCtrl', function($scope) {
-                $scope.list = ["curious", "brave", "smart", "happy", "loving"];
-                $scope.randNum = Math.floor(Math.random()*4)
-                $scope.fullName = function() {
-                    return $scope.list[$scope.randNum];
-                };
-            });
-    </script>
-    <div ng-app="" ng-controller="personCtrl">
-            
-        I am {{ fullName() }}
-            
+<div class = "text" ng-app="myApp" ng-controller="complimentCtrl">
+
+You are {{compliment()}}
+    
+    <div class = "button">
+        <button onclick = "myApp">Have another compliment!</button>
     </div>
 
+</div>
 
+<script>
+var app = angular.module('myApp', []);
+app.controller('complimentCtrl', function($scope) {
+    $scope.list = ["curious", "brave", "smart", "happy", "loving"];
+    $scope.randNum = Math.floor(Math.random()*4)
+    $scope.compliment = function() {
+        return $scope.list[$scope.randNum];
+    };
+});
+</script>
 
 </body>
 </html>
