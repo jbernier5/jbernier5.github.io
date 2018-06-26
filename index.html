@@ -28,8 +28,8 @@
     <script>
     var app = angular.module('myApp', []);
     app.controller('complimentCtrl', function($scope) {
-        $scope.list = ["a ray of sunshine on a cloudy day!", "as brave as a lion.", "a strong, independent woman who don't need no man.", "a good person.", "looking really nice today!"];
-        $scope.randNum = Math.floor(Math.random()*4)
+        $scope.list = ["a ray of sunshine on a cloudy day!", "as brave as a lion.", "a strong, independent woman.", "a good person.", "looking really nice today!", ", without a doubt, the worst pirate I have ever heard of!"];
+        $scope.randNum = Math.floor(Math.random()*5)
         $scope.compliment = function() {
             return $scope.list[$scope.randNum];
         };
