@@ -27,7 +27,7 @@
         var app = angular.module('myApp', []);
         app.controller('complimentCtrl', function($scope) {
             $scope.list = ["You are a ray of sunshine on a cloudy day!", "You are as brave as a lion.", "You are a strong, independent woman.", "You are a good person.", "You are looking really nice today!", "You are, without a doubt, the worst pirate I have ever heard of!", ""];
-            $scope.randNum = Math.floor(Math.random()*5)
+            $scope.randNum = Math.floor(Math.random()*6)
             $scope.compliment = function() {
                 $scope.randNum = Math.floor(Math.random()*5)
                 return $scope.list[$scope.randNum];
@@ -37,7 +37,7 @@
         </script>
 
         <div class = "footer">
-        Version 5.42 6.26
+        Version 5.44 6.26
         </div>
     </div>
 </body>
