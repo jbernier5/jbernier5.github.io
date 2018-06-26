@@ -11,30 +11,28 @@
 <body>
 
 
-<div class = "header">
-    <h1>Compliment Generator!</h1>
-</div>
-
-<div class = "text" ng-app="myApp" ng-controller="complimentCtrl">
-
-You are {{compliment()}}
-    
-    <div class = "button">
-        <button onclick = "myApp">Have another compliment!</button>
+    <div class = "header">
+        <h1>Compliment Generator!</h1>
     </div>
 
-</div>
+    <div class = "text" ng-app="myApp" ng-controller="complimentCtrl">
 
-<script>
-var app = angular.module('myApp', []);
-app.controller('complimentCtrl', function($scope) {
-    $scope.list = ["curious", "brave", "smart", "happy", "loving"];
-    $scope.randNum = Math.floor(Math.random()*4)
-    $scope.compliment = function() {
-        return $scope.list[$scope.randNum];
-    };
-});
-</script>
+    You are {{compliment()}}
+    <br>
+    <button ng-click = "myApp()">Have another compliment!</button>
+
+    </div>
+
+    <script>
+    var app = angular.module('myApp', []);
+    app.controller('complimentCtrl', function($scope) {
+        $scope.list = ["curious", "brave", "smart", "happy", "loving"];
+        $scope.randNum = Math.floor(Math.random()*4)
+        $scope.compliment = function() {
+            return $scope.list[$scope.randNum];
+        };
+    });
+    </script>
 
 </body>
 </html>

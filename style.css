@@ -21,3 +21,9 @@ html {
 .header h1 {
     font-size: 50px;
 }
+
+.text {
+    align-items: center;
+    justify-content: center;
+
+}
