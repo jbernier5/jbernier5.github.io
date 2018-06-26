@@ -17,6 +17,7 @@ html {
  .container {
     min-height: 100%;
     position: relative;
+    padding-bottom: 1px; /* height of footer */
  }
 
  .header {
@@ -34,7 +35,7 @@ html {
     text-align: center;
     font-size: 80px;
     padding: 10px;
-    padding-bottom: 1px; /* height of footer */
+    
 }
 
 .button {
