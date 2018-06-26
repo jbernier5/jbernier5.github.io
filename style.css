@@ -25,5 +25,17 @@ html {
     align-items: center;
     justify-content: center;
     text-align: center;
+    font-size: 50px;
+}
 
+.button {
+    border-radius: 12px;
+    padding: 14px 40px;
+    font-size: 16px;
+    background-color: #f44336;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
 }
