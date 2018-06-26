@@ -17,9 +17,9 @@
 
     <div class = "text" ng-app="myApp" ng-controller="complimentCtrl">
 
-        <p ng-bind = "thing()"></p>
+        <p>{{thing()}}</p>
     <p></p>
-    <button type = "button" class = "button" ng-click = "compliment()">Have another compliment!</button>
+    <button type = "button" class = "button" ng-click="compliment()">Have another compliment!</button>
 
     </div>
 
@@ -29,6 +29,7 @@
         $scope.list = ["You are a ray of sunshine on a cloudy day!", "You are as brave as a lion.", "You are a strong, independent woman.", "You are a good person.", "You are looking really nice today!", "You are, without a doubt, the worst pirate I have ever heard of!"];
         $scope.randNum = Math.floor(Math.random()*5)
         $scope.compliment = function() {
+            $scope.randNum = Math.floor(Math.random()*5)
             return $scope.list[$scope.randNum];
         };
         $scope.thing = $scope.compliment
@@ -36,7 +37,7 @@
     </script>
 
     <p>
-        Version 5.13 6.26
+        Version 5.18 6.26
     </p>
 </body>
 </html>
